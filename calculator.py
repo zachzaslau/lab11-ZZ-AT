@@ -1,3 +1,7 @@
+# https://github.com/zachzaslau/lab11-ZZ-AT/tree/main
+# Partner 1: Zach Zaslau
+# Partner 2: Anthony Toscano
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
