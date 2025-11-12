@@ -8,14 +8,14 @@ from calculator import *
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
     def test_add(self): # 3 assertions
-        self.assertEquals(add(3,3), 9)
+        self.assertEquals(add(3,3), 6)
         self.assertEquals(add(-1,2), 1)
         self.assertEquals(add(0,0), 0)
 
     def test_subtract(self): # 3 assertions
-        self.assertEquals(sub(0,0), 0)
-        self.assertEquals(sub(1, -1), 2)
-        self.assertEquals(sub(5, 10), -5)
+        self.assertEquals(subtract(0,0), 0)
+        self.assertEquals(subtract(1, -1), 2)
+        self.assertEquals(subtract(5, 10), -5)
     # ##########################
 
     ######## Partner 1
@@ -40,19 +40,19 @@ class TestCalculator(unittest.TestCase):
 
     def test_logarithm(self): # 3 assertions
     #     fill in code
-        self.assertEquals(log(10,1),0)
-        self.assertEquals(log(10,100), 2)
-        self.assertEquals(log(10,1000), 3)
+        self.assertEquals(logarithm(10,1),0)
+        self.assertEquals(logarithm(10,100), 2)
+        self.assertEquals(logarithm(10,1000), 3)
 
     def test_log_invalid_base(self): # 1 assertion
     #     # use same technique from test_divide_by_zero
     #     fill in code
-        self.assertRaise(ValueError, log(-1,10))
+        self.assertRaise(ValueError, logarithm(-1,10))
     # ##########################
     
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
-        self.assertRaises( ValueError, log( 0, 10) )
+        self.assertRaises( ValueError, logarithm( 0, 10) )
 
     #     # call log function inside, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
