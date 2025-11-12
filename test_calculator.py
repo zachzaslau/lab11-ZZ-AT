@@ -47,7 +47,7 @@ class TestCalculator(unittest.TestCase):
     def test_log_invalid_base(self): # 1 assertion
     #     # use same technique from test_divide_by_zero
     #     fill in code
-        self.assertRaise(ValueError, log(-1,10))
+        self.assertRaises(ValueError, log(-1,10))
     # ##########################
     
     ######## Partner 1
