@@ -42,12 +42,12 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
         self.assertEquals(logarithm(10,1),0)
         self.assertEquals(logarithm(10,100), 2)
-        self.assertEquals(logarithm(10,1000), 3)
+        self.assertEquals(logarithm(2,2), 1)
 
     def test_log_invalid_base(self): # 1 assertion
     #     # use same technique from test_divide_by_zero
     #     fill in code
-        self.assertRaise(ValueError, logarithm(-1,10))
+        self.assertRaises(ValueError, logarithm(-1,10))
     # ##########################
     
     ######## Partner 1
